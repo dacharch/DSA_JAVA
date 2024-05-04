@@ -26,17 +26,7 @@ class FullLinkedList{
     }
 
     void insertNodeAtPos(int data, int pos){
-         if(pos < 0){
-            System.out.println("Invalid Position");
-         }
-
-         if(pos == 1){
-            Node newNode = new Node(data) ;
-            newNode.next = head ;
-            head = newNode  ;
-         }else{
-            
-         }
+        
     }
 
     void display(){
