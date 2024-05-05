@@ -14,10 +14,14 @@ public class DoublyLinkedList {
         }
     }
 
-    void display(){
-         
-        
+    void displayForward(){
+        Node start = head ;
+        while(start.next != null){
+            start = start.next ;
+            System.out.print(start.data+"->") ;
+        }
     }
+    
     public static void main(String args[]){
         DoublyLinkedList ob = new DoublyLinkedList() ;
 
@@ -27,6 +31,7 @@ public class DoublyLinkedList {
         ob.insertAtFirst(90);
         ob.insertAtFirst(353);
         ob.insertAtFirst(323) ;
+        ob.displayForward();
 
         
    }    
